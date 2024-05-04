@@ -19,7 +19,9 @@ export const BlogCard = ({
           <img className={styles.avatar} src={avatar} alt={userName} />
           <div>
             <h3 className={styles.userName}>{userName}</h3>
-            <small className={styles.date}>{formatDate(postedAt)}</small>
+            <small className={styles.date}>
+              {formatDate.formatDate(postedAt)}
+            </small>
           </div>
         </div>
       </div>
